@@ -214,10 +214,10 @@
 // ------|           |           |     |    CFG    |           |------
 //       -------------------------     -------------------------
             bindings = <
-                &none       &none       &none       &none       &none                   &none       &kp PG_UP   &kp UP      &kp PG_DN   &kp DEL
-                &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &none                   &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END
-                &none       &none       &none       &none       &none                   &none       &none       &none       &none       &none
-                                                    &none       &none                   &none       &none
+                &none      &none      &none       &none       &none                   &kp PG_UP   &kp HOME   &kp UP     &kp END     &none
+                &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none                   &kp PG_DN   &kp LEFT   &kp DOWN   &kp RIGHT   &none
+                &none      &none      &none       &none       &none                   &none       &none      &none      &none       &none
+                                                  &none       &none                   &none       &none
             >;
         };
 
