@@ -96,7 +96,12 @@
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&kp BACKSPACE>;
-            };
+            };  
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp DEL>;
+            };            
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -156,15 +161,15 @@
             label = "Base";
 // -------------------------------     -------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |  -  |  Y  |  U  |  I  |  O  |  P  | 
-// |A sft|S win|D alt|F ctl|  G  |     |  H  |J ctl|K alt|L win|' sft| 
+// |A gui|S alt|D ctl|F sht|  G  |     |  H  |J sht|K ctl|L alt|' gui| 
 // |  Z  |  X  |  C  |  V  |  B  |  -  |  N  |  M  |  ,  |  .  |  ;  | 
-// ------|    Spc    |    Nav    |     |    Sym    |    Ent    |------
+// ------|    Ent    |    Nav    |     |    Sym    |    Space  |------
 //       -------------------------     -------------------------
             bindings = <
-                &kp Q       &kp W       &kp E       &kp R       &kp T                   &kp Y       &kp U       &kp I       &kp O       &kp P
-                &hm LSHFT A &hm LGUI S  &hm LALT D  &hm LCTRL F &kp G                   &kp H       &hm RCTRL J &hm RALT K  &hm RGUI L  &hm RSHFT QUOT
-                &kp Z       &kp X       &kp C       &kp V       &kp B                   &kp N       &kp M       &kp COMMA   &kp DOT     &kp SEMI
-                                          &lt NUM_L RET  &mo NAV_L                  &mo SYM_L   &kp SPACE 
+                &kp Q        &kp W        &kp E        &kp R          &kp T              &kp Y      &kp U        &kp I        &kp O       &kp P
+                &hm LGUI A   &hm LALT S   &hm LCTRL D  &hm LSHFT F    &kp G              &kp H      &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI QUOT
+                &kp Z        &kp X        &kp C        &kp V          &kp B              &kp N      &kp M        &kp COMMA    &kp DOT     &kp SEMI
+                                                       &lt NUM_L RET  &mo NAV_L          &mo SYM_L  &kp SPACE 
             >;
         };
     
